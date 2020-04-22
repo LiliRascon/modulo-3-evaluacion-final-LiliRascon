@@ -3,11 +3,12 @@
 ![di](https://i.ibb.co/LPZnXLJ/Rick.png)
 
 ## modulo-3-evaluación-final-LiliRascón    
-## Página web de Rick and Morty  💻 !!
+## Página web de Rick and Morty  
 
 
 
-> => Evaluación final. ✨ 
+
+> => Evaluación final.  ![di](https://i.ibb.co/sKhSdJY/ricky-Morty.png) 
 
 	
 <h3 text-align="center">LILIANA RASCÓN ESTRADA  <a href="" target="_blank"> Evaluación Final React</a>.</h3>
