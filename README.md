@@ -11,36 +11,42 @@
 > => Evaluación final.  ![di](https://i.ibb.co/sKhSdJY/ricky-Morty.png) 
 
 	
-<h3 text-align="center">LILIANA RASCÓN ESTRADA  <a href="" target="_blank"> Evaluación Final React</a>.</h3>
+<h3 text-align="center">LILIANA RASCÓN ESTRADA  
+<a href="" target="_blank"> Evaluación Final React</a>.</h3>
 
-Mi nombre es Liliana Rascón Estrada, alumna de Adalab promo Idelisa, nerviosa con este proyecto pero ilusionada por poder realizarlo con éxito.
+## -- 
+Mi nombre es Liliana Rascón Estrada 👩🏻‍💻 , alumna de Adalab promo Idelisa, nerviosa con este proyecto pero ilusionada por poder realizarlo con éxito.
 
-=>En este repositorio encontrarás mi evaluación final, es el modulo 3 y ha sido creado con React.
+🌀 En este repositorio encontrarás mi evaluación final, es el modulo 3 y ha sido creado con React.
 
-El enunciado consiste en lo siguiente:
+## Página web de Rick and Morty  
+
+El enunciado consiste en lo siguiente:  🧠 🧠 🧠 
 
 El ejercicio consiste en desarrollar una página web con un listado de personajes de Rick and Morty, que podemos filtrar por el nombre del personaje. Vamos a usar React para realizarlo.
-Vamos de definir las distintas partes del ejercicio: 
+Vamos a definir las distintas partes del ejercicio: 
 
- 1. Listado de personajes
+## -- 
+
+ 1. Listado de personajes  👩🏼‍🎤 👨🏼‍🎤 
 
 En primer lugar, vamos a realizar una web con el listado de personajes de Rick and Morty.  Para eso, vamos a utilizar el servicio de [https://rickandmortyapi.com/documentation/#get-all-characters] que nos devuelve información sobre los primeros 20 personajes de la serie. Sobre cada uno, vamos a pintar al menos:
 
- - Foto
- - Nombre
- - Especie
+ - Foto  🐲 
+ - Nombre 🔡 
+ - Especie 🦟 🦠 🐢
 
 Si este servicio no funcionase (porque nos hubieran baneado) tenemos una url de backup:  
 [https://raw.githubusercontent.com/Adalab/rick-y-morty/master/data/rick-y-morty.json]
 
 Para esta primera parte del ejercicio es suficiente pintar la información sin maquetar.
 
-2. Filtrado de personajes
+ 
+2. Filtrado de personajes 🧹 
 
 Ahora que ya tenemos el listado de personajes en pantalla, la segunda parte consiste en poder buscarlos por nombre. Para eso, añadimos un input a la interfaz, de forma que al ir escribiendo un nombre queden en la interfaz sólo los personajes cuyo nombre contiene las letras escritas.  En la imagen que aparece al principio, al escribir 'Ric' aparecen personajes cuyo nombre completo contiene esas letras en ese orden.
 
-
-3. Componentes del listado de personajes  
+3. Componentes del listado de personajes 🦾  
 
 El listado debe tener los siguientes componentes como mínimo:
  - Componente para filtros
@@ -60,12 +66,12 @@ Como en el ejemplo:
 ```
 
 
-4. Detalle de personajes
+4. Detalle de personajes 📝 
 
 Vamos a implementar una nueva funcionalidad: al hacer clic sobre la tarjeta de un personaje, su información aparecerá a pantalla completa. Para hacer esto usaremos rutas y React router. En la pantalla de detalle aparecerá además de la foto, nombre y especie, el planeta de origen, el número de episodios en los que aparece y si está vivo o muerto.
 
 
-5. Detallitos de calidad
+5. Detallitos de calidad 📜 
 
  - Como nos gusta cuidar la semántica, el campo de texto debe estar recubierto por una etiqueta <form />.  
  - Si estando en el campo de filtrado pulsamos intro debéis impedir que el navegador navegue o cambie la ruta sin querer.
@@ -73,7 +79,8 @@ Vamos a implementar una nueva funcionalidad: al hacer clic sobre la tarjeta de u
  - El filtro debe filtrar independientemente de que la usuaria introduzca el texto en mayúsuclas o minúsculas.
  - Al entrar en el detalle de un personaje y a continuación pulsar atrás, el campo de texto debe mostrar el texto que tenía anteriormente.
 
- 6. BONUS: Mejoras visuales
+
+ 6. BONUS: Mejoras visuales 🛍  
 
  Para terminar, podéis realizar algunas mejoras visuales del ejercicio. Por ejemplo:
  - Mostrar la especie y si un personajes está muerto con un icono.
@@ -81,23 +88,23 @@ Vamos a implementar una nueva funcionalidad: al hacer clic sobre la tarjeta de u
  - Usar algún sistema de grid para pintar el listado de personajes.
 
 
-7. BONUS: URL compartible
+7. BONUS: URL compartible 📌 
 
  - Como ejercicio extra os proponemos que la URL del detalle de personaje sea compartible, es decir, que si visitamos esa URL directamente en el navegador se vea el detalle del personaje.
  - Y en el caso de que el usuario navegue a una URL inexistente como por ejemplo http://localhost:3000/#/detail/12345 (el id 12345 no existe) debemos mostrar un mensaje del tipo "El personaje que buscas no existe".
 
 
-8. BONUS: Ordenación
+8. BONUS: Ordenación 🗃 
 
 Un extra interesante sería que ordenáseis el listado de personajes alfabéticamente por nombre.
 
-
-Recursos
+## -- 
+Recursos 
 
 Puedes descargar el logo desde [https://help.redbubble.com/hc/article_attachments/360002309526/Rick_and_Morty_-_logo__English_.png]
 
 
-Criterios de evaluación
+Criterios de evaluación 📊 
 
 Vamos a listar los criterios de evaluación de este ejercicio. Si no superas al menos el 80% de estos criterios o
 no has superado algún criterio clave (marcados con *) te pediremos que realices una re-evaluación con el fin de que termines el curso mejor preparada y enfrentes tu primera experiencia profesional con más seguridad. En caso contrario, estás aprendiendo al ritmo que hemos pautado para poder afrontar los conocimientos del siguiente módulo.
@@ -118,7 +125,7 @@ React básico
  - Tiene soltura a la hora de realizar cambios en el ejercicio presencial.
 
 
-React router
+React router 📍 
 
 - Crea rutas navegables dentro de una aplicación
 
@@ -126,6 +133,7 @@ React router
 Issues
 - Haber resuelto las issues de la evaluación intermedia
 
+## -- 
 Otros criterios a tener en cuenta
 
 - Usar inglés para nombres de variables, funciones, clases, mensajes de commit, nombres de ficheros. 
@@ -135,7 +143,7 @@ Otros criterios a tener en cuenta
 
 ## Autora ✒️  
 
-🛡 🔮 🛡 | Liliana Rascón |  [GitHub](https://github.com/LiliRascon)   | 🛡 🔮 🛡
+👩🏻‍💻  | Liliana Rascón |  [GitHub](https://github.com/LiliRascon)   |   👩🏻‍💻  
 
 
  
@@ -210,7 +218,7 @@ $ npm start
 ### Remoto
 - Para la realización de este proyecto trabajamos en Remoto.
 
-- Entrega:
+- Entrega: ⌛️
 
 Se han pautado 12 horas de dedicación al ejercicio, por lo que el límite de entrega es
 Turno de tarde: 25/04/2020 a las 23:59:59:999 horas
@@ -221,7 +229,7 @@ Control de versiones :bookmark:
 
 
 ## Estructura
-:octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  
+ 
  La estructura de carpetas es la siguiente:
 
 ```
@@ -253,8 +261,7 @@ Control de versiones :bookmark:
 
    
 ```
-:octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:  :octocat:
-:octocat:  :octocat:
+
 
 ## Contribuye 🖇️
 1.  Haz un Fork ([https://github.com/yourname/yourproject/fork](https://github.com/yourname/yourproject/fork))
@@ -265,7 +272,7 @@ Control de versiones :bookmark:
 
 ## Agradecimientos 🏅 
 
- - Por todo, por todo por todo por todo........    Muchas gracias Marìa (mi profe)!!
+ - Por todo, por todo, por todo, por todo!........    Muchas gracias Marìa 👩🏻‍🏫 (mi profe)!!
 
 
 ## Recursos
@@ -277,4 +284,4 @@ Control de versiones :bookmark:
 
 
 ## Creado 
-⌨️ con ❤️ por Lili Rascón. 😊
+⌨️ con ❤️ por Lili Rascón. 
