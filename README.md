@@ -44,7 +44,9 @@ Para esta primera parte del ejercicio es suficiente pintar la información sin 
  
 2. Filtrado de personajes 🧹 
 
-Ahora que ya tenemos el listado de personajes en pantalla, la segunda parte consiste en poder buscarlos por nombre. Para eso, añadimos un input a la interfaz, de forma que al ir escribiendo un nombre queden en la interfaz sólo los personajes cuyo nombre contiene las letras escritas.  En la imagen que aparece al principio, al escribir 'Ric' aparecen personajes cuyo nombre completo contiene esas letras en ese orden.
+Ahora que ya tenemos el listado de personajes en pantalla, la segunda parte consiste en poder buscarlos por nombre. Para eso, añadimos un input a la interfaz, de forma que al ir escribiendo un nombre queden en la interfaz sólo los personajes cuyo nombre contiene las letras escritas.  En la imagen que aparece a continuación, al escribir 'Ric' aparecen personajes cuyo nombre completo contiene esas letras en ese orden.
+
+![di](https://i.ibb.co/gRSb6HX/Rick.png)
 
 3. Componentes del listado de personajes 🦾  
 
