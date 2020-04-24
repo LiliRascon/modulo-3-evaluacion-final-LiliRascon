@@ -12,6 +12,9 @@
    height: 800px;
    padding-top: 50px;
    align-items: center;
+   padding-bottom: 20px;
+   
+
    .hidden{
       width: 20%;
       height: 100px;
@@ -25,7 +28,10 @@
       background-color: #08afc7;
       width: 80%;
       height: 550px;
+      
+
       .container-data{
+         
          .style-title{
             margin: 1px;
             font-family: sans-serif;
@@ -149,8 +155,8 @@
          display: flex;
          flex-direction: row;
          background-color: #08afc7;
-         width: 80%;
-         height: 600px;
+         width: 60%;
+         height: 400px;
          .container-data{
             .style-title{
                margin: 1px;
