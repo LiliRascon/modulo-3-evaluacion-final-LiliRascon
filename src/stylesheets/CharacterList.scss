@@ -1,9 +1,12 @@
 .container-cardList{
    display: flex;
-  
    text-align: center;
    text-decoration: none;
-   
+
+   .style-error{
+      font-family: 'Franklin Gothic Medium';
+      color: red;
+   }
    .card-list{
       background-color: gray;
       width: 400px;

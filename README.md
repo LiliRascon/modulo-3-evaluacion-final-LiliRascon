@@ -283,8 +283,7 @@ Control de versiones :bookmark:
 * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
 * [CodePen](https://codepen.io/)
 * [Git commit emojis](https://gist.github.com/parmentf/035de27d6ed1dce0b36a)
-
+* [How to use emojis in React](https://medium.com/@seanmcp/%EF%B8%8F-how-to-use-emojis-in-react-d23bbf608bf7)
 
 ## Creado 
 ⌨️ con ❤️ por Lili Rascón. 
-hola este es mi repo [https://github.com/Adalab/modulo-3-evaluacion-final-LiliRascon]

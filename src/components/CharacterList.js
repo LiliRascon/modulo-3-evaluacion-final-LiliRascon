@@ -6,13 +6,13 @@ import "../stylesheets/CharacterList.scss"
 
 
 const CharacterList = (props) => {
-   const error = !props.cards.length ? <h1>ERROR!! No existe ningún personaje que coincida con la palabra: {props.inputValue}</h1> : ''   
+   const error = !props.cards.length ? <h1>ERROR!! No existe ningún personaje que coincida con la palabra:{props.inputValue}</h1> : ''   
    console.log(props.cards.length)
   
 
    return (
       <div className="container-cardList">
-         <p>{error}</p>
+         <p className="style-error">{error}</p>
          <ul className="cardList">
             {/* representacion del array que tengo que pintar */}
             {props.cards
