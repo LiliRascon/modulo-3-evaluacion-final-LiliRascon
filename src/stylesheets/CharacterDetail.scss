@@ -1,3 +1,9 @@
+.emoji-spec{
+   font-size: 30px;
+}
+.emoji-status{
+   font-size: 80px;
+}
 .character-details{
    display: flex;
    flex-direction: column;
@@ -11,9 +17,15 @@
       align-items: center;
       display: flex;
       flex-direction: column;
-      background-color: aqua;
+      background-color: #08afc7;
       width: 80%;
       height: 550px;
+      .container-data{
+         .style-title{
+            font-family: sans-serif;
+            color: white;
+         }
+      }
 
       .container-img-detail{
          margin: 50px;

@@ -25,7 +25,7 @@ class App extends React.Component {
   }
 
   componentDidUpdate() {
-    localStorage.setItem('value', JSON.stringify(this.state.value))
+    localStorage.setItem('info', JSON.stringify(this.state.value))
   }
 
   componentDidMount() {
@@ -38,7 +38,7 @@ class App extends React.Component {
         })
       })
 
-    const localInfo = JSON.parse(localStorage.getItem('value'));
+    const localInfo = JSON.parse(localStorage.getItem('info'));
     console.log(localInfo)
     if (localInfo !== null) {
       this.setState({
@@ -58,6 +58,7 @@ class App extends React.Component {
     const { data, value } = this.state;
     return data
       .filter(cardsObj => value === '' || cardsObj.name.toUpperCase().includes(value.toUpperCase()))
+      
   }
 
 

@@ -1,9 +1,15 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import '../stylesheets/CharacterDetail.scss';
+import FontAwesome from 'react-fontawesome';
+
 
 const CharacterDetail = (props) => {
+   const spec = props.cardsObj.species === 'Human' ? <span className="emoji-spec">👨🏻 👩🏻</span> : <span className="emoji">👽</span>
+   const icon = props.cardsObj.status === 'Alive' ? <FontAwesome className='heart' name='heart' size='2x' spin style={{ color: 'red' }} /> : <span className="emoji-status">⚰️</span>
+   
    console.log(props)
+   
 
    return (
       <div className="character-details">
@@ -12,11 +18,11 @@ const CharacterDetail = (props) => {
                <img className="img-info" src={props.cardsObj.image} alt={props.cardsObj.name} />
             </div>
             <div className="container-data">
-               {<h2 className="style-">{props.cardsObj.name}</h2>}
-               {<p>SPECIES: {props.cardsObj.species}</p>}
-               {<p>ORIGIN: {props.cardsObj.origin.name}</p>}
-               {<p>EPISODES: {props.cardsObj.episode.length}</p>}
-               {<p>STATUS: {props.cardsObj.status}</p>}
+               {<h2 className="style-title">{props.cardsObj.name}</h2>}
+               {<p className="style-title">SPECIES:{spec} {props.cardsObj.species}</p>}
+               {<p className="style-title">ORIGIN: {props.cardsObj.origin.name}</p>}
+               {<p className="style-title">EPISODES: {props.cardsObj.episode.length}</p>}               
+               {<p className="style-title">STATUS:{icon}</p>}
             </div>
             <Link to="/">
                <button>Home</button>
