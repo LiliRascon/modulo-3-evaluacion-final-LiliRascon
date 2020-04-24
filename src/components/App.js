@@ -5,18 +5,28 @@ import CharacterList from '../components/CharacterList';
 import Filter from '../components/Filters';
 import { Switch, Route } from 'react-router-dom';
 import CharacterDetail from '../components/CharacterDetail';
+import Header from '../components/Header.js';
+
+
 
 class App extends React.Component {
   constructor(props) {
     super(props);
+
+
     this.handleInputValue = this.handleInputValue.bind(this);
     this.renderCharacterDetail = this.renderCharacterDetail.bind(this);
+    this.addFilters = this.addFilters.bind(this);
+
     this.state = {
       data: [],
       value: ''
     }
   }
 
+  componentDidUpdate() {
+    localStorage.setItem('value', JSON.stringify(this.state.value))
+  }
 
   componentDidMount() {
     fetchData()
@@ -27,54 +37,60 @@ class App extends React.Component {
           data: data.results
         })
       })
+
+    const localInfo = JSON.parse(localStorage.getItem('value'));
+    console.log(localInfo)
+    if (localInfo !== null) {
+      this.setState({
+        value: localInfo
+      })
+    }
   }
 
   handleInputValue(inputValue) {
     this.setState({
       value: inputValue
-      
     })
+
+  }
+
+  addFilters() {
+    const { data, value } = this.state;
+    return data
+      .filter(cardsObj => value === '' || cardsObj.name.toUpperCase().includes(value.toUpperCase()))
   }
 
 
 
 
-  
-   renderCharacterDetail(props){
-     console.log(props.match.params.id)
-     const routeId = props.match.params.id;
-     const results = this.state.data;
-     for (let result of results){
-       if(result.id === parseInt(routeId)){
-         return <CharacterDetail cardsObj={result} />
-       }
-      
-     }
-    
-   }
+  renderCharacterDetail(props) {
+    console.log(props.match.params.id)
+    const routeId = props.match.params.id;
+    const results = this.state.data;
+    for (let result of results) {
+      if (result.id === parseInt(routeId)) {
+        return <CharacterDetail cardsObj={result} />
+      }
 
-  // renderShowDetail(props) {
-  //   console.log(props)
-  //   const urlId = props.match.params.id;
-  //   const shows = this.state.dataApi;
-  //   for (let showObject of shows) {
-  //     if (showObject.show.id === parseInt(urlId)) {
-  //       return <ShowDetail show={showObject} />
-  //     }
-  //   }
-  // }
+    }
+
+  }
+
+
 
   render() {
     console.log(this.state.data)
     return (
       <div className="App">
+
         <Switch>
           <Route exact path="/">
-            <Filter handleInputValue={this.handleInputValue} />
-            <CharacterList cards={this.state.data} inputValue={this.state.value} />
+            <Header />
+            <Filter handleInputValue={this.handleInputValue} value={this.state.value} />
+            <CharacterList cards={this.addFilters()} inputValue={this.state.value} />
           </Route>
           <Route path="/results/:id" render={this.renderCharacterDetail} />
-          
+
         </Switch>
 
       </div>

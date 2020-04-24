@@ -6,20 +6,27 @@ import React from 'react';
 
 const Filter = (props) => {
    const updateInputValue = (event) => {
-      props.handleInputValue(event.currentTarget.value)
+
+      props.handleInputValue(event.currentTarget.value);
+
    }
 
+   const preventDefault = (event) => {
+      event.preventDefault();
+   }
 
    return (
-      <form>
+      <form onSubmit={preventDefault}>
+
          {/* como los input los controlamos a traves de react por lo tanto lo hago a traves de las props */}
          <input
             name="title"
             type="text"
             placeholder="Ej. Rick"
             value={props.value}
-            onChange={updateInputValue} />
-            
+            onChange={updateInputValue}
+         />
+
       </form>
    )
 }
