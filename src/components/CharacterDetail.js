@@ -4,10 +4,11 @@ import '../stylesheets/CharacterDetail.scss';
 import FontAwesome from 'react-fontawesome';
 import '../images/logo.png';
 import LogoDetail from '../components/LogoDetail';
+import Emoji from '../components/Emoji';
 
 const CharacterDetail = (props) => {
-   const spec = props.cardsObj.species === 'Human' ? <span className="emoji-spec">👨🏻 👩🏻</span> : <span className="emoji">👽</span>
-   const icon = props.cardsObj.status === 'Alive' ? <FontAwesome className='heart' name='heart' size='2x' spin style={{ color: 'red' }} /> : <span className="emoji-status">⚰️</span>
+   const spec = props.cardsObj.species === 'Human' ? <Emoji className="emoji-spec" symbol="👨🏻 👩🏻" label="human"/> : <Emoji className="emoji" symbol="👽" label="Extraterrestre"/>
+   const icon = props.cardsObj.status === 'Alive' ? <FontAwesome className='heart' name='heart' size='2x' spin style={{ color: 'red' }} /> : <Emoji className="emoji-status" symbol="⚰️" label="Dead"/>
    
    console.log(props)
    

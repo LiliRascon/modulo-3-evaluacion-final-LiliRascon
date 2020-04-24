@@ -1,16 +1,134 @@
-.container-cardList{
+.container-cardList{   
    display: flex;
+   flex-direction: row;
+   align-content: center;
    text-align: center;
-   text-decoration: none;
-
+  
    .style-error{
       font-family: 'Franklin Gothic Medium';
-      color: red;
+      color: red;         
    }
-   .card-list{
-      background-color: gray;
-      width: 400px;
-      height: 400px;
-      margin-top: 10px;
+
+   .cardList{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      flex-wrap: wrap;
+      width: 70%;
+      margin: auto;
+      
+      
+
+      .cards{
+         display: flex;
+         flex-direction: row; 
+         align-items: center;         
+         background-color: #97b64e;
+         border-radius: 10px;            
+         margin: 10px;
+         text-decoration: none;
+
+            li{
+               list-style: none;
+   
+               .link{               
+                  text-decoration: none;
+                  color: white;
+               }
+            }        
+      }
+   }  
+}
+
+@media all and (min-width: 768px) {
+.container-cardList{   
+   display: flex;
+   flex-direction: row;
+   align-content: center;
+   text-align: center;
+  
+   .style-error{
+      font-family: 'Franklin Gothic Medium';
+      color: red;         
    }
+
+   .cardList{
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      flex-wrap: wrap;
+      width: 70%;
+      margin: auto;
+      
+
+      .cards{
+         display: flex;
+         flex-direction: row; 
+         align-items: center;         
+         background-color: #97b64e;
+         border-radius: 10px;            
+         margin: 10px;
+         text-decoration: none;
+
+            li{
+               list-style: none;
+   
+               .link{               
+                  text-decoration: none;
+                  color: white;
+               }
+            }        
+      }
+   }  
+}
+}
+
+@media all and (min-width: 1024px) {
+   .container-cardList{   
+      display: flex;
+      flex-direction: row;
+      align-content: center;
+      text-align: center;
+     
+      .style-error{
+         font-family: 'Franklin Gothic Medium';
+         color: red;         
+      }
+   
+      .cardList{
+         display: flex;
+         flex-direction: row;
+         align-content: center;
+         flex-wrap: wrap;
+         width: 70%;
+         margin: auto;
+         padding-top: 100px;
+         
+   
+         .cards{
+            display: flex;
+            flex-direction: row; 
+            align-items: center;         
+            background-color: #08afc7;
+            border-radius: 10px;            
+            margin: 10px;
+            text-decoration: none;
+   
+               li{
+                  list-style: none;
+      
+                  .link{               
+                     text-decoration: none;
+                     color: white;
+                  }
+               }
+            
+          
+           
+         }
+      }
+     
+     
+   }
+
 }
