@@ -60,9 +60,7 @@ class App extends React.Component {
       .filter(cardsObj => value === '' || cardsObj.name.toUpperCase().includes(value.toUpperCase()))
       
   }
-
-
-
+ 
 
   renderCharacterDetail(props) {
     console.log(props.match.params.id)

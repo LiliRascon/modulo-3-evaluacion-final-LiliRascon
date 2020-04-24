@@ -1,0 +1,10 @@
+.page__logo{
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   .img-logo{
+      margin-top: 0px;
+      width: 50%;
+      height: 150px;
+   }
+}

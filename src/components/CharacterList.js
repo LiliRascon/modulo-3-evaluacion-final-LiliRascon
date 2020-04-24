@@ -4,11 +4,13 @@ import { Link } from 'react-router-dom';
 import "../stylesheets/CharacterList.scss"
 
 
-const CharacterList = (props) => {
-   const error = !props.cards.length ? <h1>ERROR!! No existe ningún personaje que coincida con la palabra: {props.inputValue}</h1> : ''
-   console.log(props.cards.length)
-   return (
 
+const CharacterList = (props) => {
+   const error = !props.cards.length ? <h1>ERROR!! No existe ningún personaje que coincida con la palabra: {props.inputValue}</h1> : ''   
+   console.log(props.cards.length)
+  
+
+   return (
       <div className="container-cardList">
          <p>{error}</p>
          <ul className="cardList">
