@@ -12,10 +12,13 @@ const CharacterList = (props) => {
 
 
    return (
+    
       <div className="container-cardList">
+          
          <p className="style-error">{error}</p>
+         
          <ul className="cardList">
-
+        
             {props.cards.sort((a, b) => {
                if (a.name < b.name) { return -1 }
                if (a.name > b.name) { return 1 }

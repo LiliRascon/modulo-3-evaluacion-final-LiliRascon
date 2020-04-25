@@ -1,9 +1,34 @@
-.page__header{
-   display: flex;
-   // position: fixed;
+.page__header{ 
+   visibility: hidden;
+   position: fixed;
+   
    .img-logo{
-      width: 100%;
-      height: 350px;
+    height: 1px;      
+   }  
+
+}
+@media all and (min-width: 768px){
+   .page__header{
+      display: flex;
+      flex-direction: column;
+   
+      .img-logo{
+         width: 70%;
+         height: 350px;
+      }     
    }
-  
+}
+
+@media all and (min-width: 1024px){
+   .page__header{
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      visibility: visible;
+    
+      .img-logo{
+         width: 60%;
+         height: 350px;
+      }     
+   }
 }

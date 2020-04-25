@@ -1,12 +1,13 @@
 import React from 'react';
+import '../stylesheets/reset/Normalize.scss';
 import '../stylesheets/App.scss';
 import fetchData from '../services/FetchData';
 import CharacterList from '../components/CharacterList';
 import Filter from '../components/Filters';
 import { Switch, Route } from 'react-router-dom';
 import CharacterDetail from '../components/CharacterDetail';
-import Header from '../components/Header.js';
-
+import Header from '../components/Header';
+import Landing from '../components/Landing';
 
 
 class App extends React.Component {
@@ -58,9 +59,9 @@ class App extends React.Component {
     const { data, value } = this.state;
     return data
       .filter(cardsObj => value === '' || cardsObj.name.toUpperCase().includes(value.toUpperCase()))
-      
+
   }
- 
+
 
   renderCharacterDetail(props) {
     console.log(props.match.params.id)
@@ -84,12 +85,18 @@ class App extends React.Component {
 
         <Switch>
           <Route exact path="/">
-            <Header />
+            <Landing />
+
+           
+          </Route>
+          <Route path="/CharacterList" >
+          <Header />
             <Filter handleInputValue={this.handleInputValue} value={this.state.value} />
             <CharacterList cards={this.addFilters()} inputValue={this.state.value} />
           </Route>
+         
+         
           <Route path="/results/:id" render={this.renderCharacterDetail} />
-
         </Switch>
 
       </div>
