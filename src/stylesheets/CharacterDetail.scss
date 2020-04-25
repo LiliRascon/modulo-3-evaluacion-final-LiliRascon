@@ -146,10 +146,10 @@
       flex-direction: column;
       background-color: #0e0e0e;
       width: 100%;
-      height: 100vh;
+      height: 100%;
       align-items: center;
-      margin: 0px;
       
+            
       .container-info-detail{   
          align-items: center;
          display: flex;
@@ -157,6 +157,8 @@
          background-color: #08afc7;
          width: 60%;
          height: 400px;
+         padding-bottom: 100px;
+         
          .container-data{
             .style-title{
                margin: 1px;
