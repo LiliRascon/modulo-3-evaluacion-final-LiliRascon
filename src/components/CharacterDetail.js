@@ -31,7 +31,7 @@ const CharacterDetail = (props) => {
                {<p className="style-title">STATUS:{icon}</p>}
             </div>
             <div>
-            <Link to="/">
+            <Link to="/CharacterList">
                <button>Home</button>
             </Link>
             </div>
